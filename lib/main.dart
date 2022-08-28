@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    final ALCHEMY_KEY = dotenv.env['ALCHEMY_KEY_TEST'];
+    final ALCHEMY_KEY = dotenv.env['ALCHEMY_URL_TEST'];
     httpClient = http.Client();
     polygonClient = Web3Client(ALCHEMY_KEY!, httpClient);
   }
